@@ -52,11 +52,14 @@ def decrypt(string):
   for char in string:
     if char == "\\":
       answer += ' '
-    elif char != '':
+    elif char != '' and char in morse.values():
       answer += reverse_morse[char]
     else:
-      answer += ' '
+      if char == ' ':
+        answer += ' '
+      else: 
+        answer += char
   return answer
     
-string = '-.. . ..-- . \ .-.. . ... \ .. ... \ ..-- . . .-. \ .. -. - . .-. . ... .- -. -'
+string = '.-- . .-. -.- - \ -.. .. - ?'
 print((decrypt(string)))
