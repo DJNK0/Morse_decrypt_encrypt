@@ -1,3 +1,9 @@
+#!/usr/bin/env
+__author__ = "David Kampmeier"
+__license__ = "MIT"
+__version = "1.0"
+
+
 morse = {
   "a":'.-',
   "b":'-...',
